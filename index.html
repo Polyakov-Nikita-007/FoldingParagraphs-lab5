@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--25 ВП1
+Поляков Н.А.
+20 вариант
+5 лаба
+-->
+<html>
+    <head>
+        <title>
+            Folding Paragraphs
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <script src="JS/jquery-4.0.0.min.js"></script>
+        <script src="JS/script.js"></script>
+        <link rel="icon" href="#">
+    </head>
+    <body>
+        <div class="testHeader">
+            <p>
+                25 ВП1
+            </p>
+            <p>
+                Поляков Н.А.
+            </p>
+            <p>
+                20 вариант
+            </p>
+            <p>
+                5 лабораторная работа
+            </p>
+            <h2>
+                Пользователь вводит в текстовом поле сообщение указывая начало 
+                и конец сворачиваемого/разворачиваемого абзаца тегами 
+                &lt;region&gt; и &lt;/region&gt;. По нажатию на кнопку «СОЗДАТЬ»
+                ниже по странице формируется текст с маркерами, обеспечивающими 
+                возможность свернуть или развернуть соответствующий абзац
+                текста. 
+            </h2>
+        </div>
+        <div>
+            <textarea id="user-text" placeholder="Введите текст..."></textarea>
+        </div>
+        <div>
+            <button onclick="Form()" id="Create">
+                СОЗДАТЬ
+            </button>
+        </div>
+        <div class="mod"></div>
+    </body>
+</html>

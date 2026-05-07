@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/bg.png');
+    background-size: cover; 
+    background-position: center center;
+    font-family: "Times New Roman", Times;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#user-text {
+    padding: 16px 20px;
+    display: block;
+    min-width: 200px;
+    max-width: 90vw;
+    margin: 16px auto;
+    width: 100%;
+    min-height: 120px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: both;
+    overflow: auto;
+    font-family: inherit;
+}
+
+#user-text:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+#Create {
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.testHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px 0;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+.testHeader > * {
+    min-width: 0;
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.mod {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.text-fragment {
+    margin: 12px 0;
+}
+
+.accordion-item {
+    margin: 16px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.accordion-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: background 0.2s;
+}
+
+.accordion-toggle:hover {
+    background: #e9ecef;
+}
+
+.accordion-toggle.active {
+    background: #e3f2fd;
+    border-bottom: 1px solid #bbdefb;
+}
+
+.toggle-icon {
+    display: inline-flex;
+    transition: transform 0.3s;
+    font-size: 12px;
+}
+
+.accordion-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 16px;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+}
+
+.accordion-content[hidden] {
+    display: none;
+}
