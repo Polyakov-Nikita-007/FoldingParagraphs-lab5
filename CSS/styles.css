@@ -129,3 +129,19 @@ body {
 .accordion-content[hidden] {
     display: none;
 }
+
+.accordion-item .accordion-item {
+    margin: 10px 0 10px 24px;
+    border-left: 3px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.accordion-item .accordion-item .accordion-toggle {
+    background: #f8fafc;
+    font-size: 13px;
+    padding: 10px 14px;
+}
+
+.accordion-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
